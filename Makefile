@@ -3,7 +3,7 @@ NAME := game
 
 # Compiler and the gauntlet's mandatory flags
 CXX      := c++
-CXXFLAGS := -Wall -Wextra -Werror -std=c++17
+CXXFLAGS := -g -Wall -Wextra -Werror -std=c++17
 
 BUILD_DIR := build
 

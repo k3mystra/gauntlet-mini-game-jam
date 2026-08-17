@@ -1,10 +1,13 @@
 #include "vendor/raylib/include/raylib.h"
 
 int main (int, char *[]) {
-    const int screenWidth = 800;
-    const int screenHeight = 450;
+    const int SCREEN_WIDTH = 1024;
+    const int SCREEN_HEIGHT = 576;
 
-    InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
+    const int SANDBOX_WIDTH = 800;
+    const int SANDBOX_HEIGHT = 400;
+
+    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "main");
 
     SetTargetFPS(60);
 
@@ -13,9 +16,11 @@ int main (int, char *[]) {
     {
         BeginDrawing();
 
-            ClearBackground(RAYWHITE);
-
-            DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
+        ClearBackground(BLACK);
+        DrawRectangleLines(
+            SCREEN_WIDTH/2 - SANDBOX_WIDTH/2,
+            SCREEN_HEIGHT/2 - SANDBOX_HEIGHT/2,
+            SANDBOX_WIDTH, SANDBOX_HEIGHT, ORANGE);
 
         EndDrawing();
     }

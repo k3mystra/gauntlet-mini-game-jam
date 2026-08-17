@@ -1,5 +1,0 @@
-Draw pixels like in sandboxels
-use the pixels to get to the objective
-
-Theme:
-probably using specific food/items/plant
